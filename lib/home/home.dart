@@ -9,7 +9,10 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () => Navigator.pushNamed(context, '/about'),
-          child: Text('About'),
+          child: Text(
+            'About',
+            style: Theme.of(context).textTheme.button,
+          ),
         ),
       ),
     );

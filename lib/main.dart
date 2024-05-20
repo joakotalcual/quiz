@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz/firebase_options.dart';
 import 'package:quiz/routes.dart';
+import 'package:quiz/theme.dart';
 
 void main() async {
   // Asegurarse de que Flutter esté inicializado
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: appRoutes,
+      theme: appTheme,
     );
   }
 }
